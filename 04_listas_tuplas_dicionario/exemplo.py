@@ -21,8 +21,7 @@ print(nomes[-1])
 
 # alternando elementos
 
-nomes[0] =
-"Pedro"
+nomes[0] = "Pedro"
 print(nomes[0])
 
 
@@ -78,8 +77,7 @@ print(dados)
 notas = [7.5, 8.0, 6.5, 9.0]
 
 
-soma =
-0
+soma = 0
 
 for nota in notas:
     soma = soma + nota
@@ -105,9 +103,48 @@ print(coodernadas[0])
 aluno = {
     "nome": "Carlos",
     "idade": 17,
-    "nota":
-8.5
+    "nota": 8.5
 }
 
-
 print(aluno)
+
+#13 Acessando valores do dicionário
+
+print(aluno["nome"])
+print(aluno["idade"])
+print(aluno["nota"])
+
+#14 Alterando valores
+
+aluno["nota"] = 9.0
+print(aluno)
+
+#15 Adicionando novos dados
+aluno["curso"] = "Informática"
+print(aluno)
+
+#16 Removendo dados
+del aluno["curso"]
+print(aluno)
+
+#17 Percorrendo um dicionário
+for chave in aluno:
+    print(chave)
+
+#Podemos acessar chave e valor ao mesmo tempo
+for chave, valor in aluno.items():
+    print(f"{chave}: {valor}")
+
+#18 Verificando uma chave
+if "Nome" in aluno:
+    print("A chave nome existe")
+
+#19 Dicionário com lista
+
+aluno = {
+    "nome": "Maria",
+    "Notas": [8.0, 7.5, 9.0]
+}
+print(aluno)
+
+
